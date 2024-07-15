@@ -1,0 +1,82 @@
+## prova 1207 con order=4 -- func=1e-7
+
+Tempo di calcolo: 3.3091 secondi, Iterazioni: 572, Metodo: conjugate_gradient, Elementi: 8 
+Tempo di calcolo: 1.6899 secondi, Iterazioni: 274, Metodo: steepest_gradient, Elementi: 8 
+Tempo di calcolo: 0.8113 secondi, Iterazioni: 128, Metodo: newton_method, Elementi: 8 
+
+Tempo di calcolo: 51.0304 secondi, Iterazioni: 1638, Metodo: conjugate_gradient, Elementi: 16 
+Tempo di calcolo: 36.2957 secondi, Iterazioni: 1204, Metodo: steepest_gradient, Elementi: 16 
+Tempo di calcolo: 91.7252 secondi, Iterazioni: 627, Metodo: newton_method, Elementi: 16 
+
+Tempo di calcolo: 446.3805 secondi, Iterazioni: 3641, Metodo: conjugate_gradient, Elementi: 32 
+Tempo di calcolo: 308.6983 secondi, Iterazioni: 2695, Metodo: steepest_gradient, Elementi: 32 
+Tempo di calcolo: 313.2046 secondi, Iterazioni: 1229, Metodo: newton_method, Elementi: 32 
+
+Tempo di calcolo: 1235.2240 secondi, Iterazioni: 5682, Metodo: conjugate_gradient, Elementi: 64 
+Tempo di calcolo: 782.2523 secondi, Iterazioni: 3623, Metodo: steepest_gradient, Elementi: 64 
+Tempo di calcolo: 912.2301 secondi, Iterazioni: 2194, Metodo: newton_method, Elementi: 64 
+
+## prova 1307 con order = 10000 -> con 16x16 funziona a 100, 32x32 fino a 1000 -- func=1e-8
+Tempo di calcolo: 1677.7721 secondi, Iterazioni: 7356, Metodo: steepest_gradient, Elementi: 64 
+Tempo di calcolo: 703.0317 secondi, Iterazioni: 1537, Metodo: newton_method, Elementi: 64 
+
+## prova 1307 con order = 100000  -- func=1e-7  ->>>>>>> win adam!!!!!!!
+Tempo di calcolo: 1.5115 secondi, Iterazioni: 247, Metodo: steepest_gradient, Elementi: 8 
+Tempo di calcolo: 0.8139 secondi, Iterazioni: 118, Metodo: newton_method, Elementi: 8 
+Tempo di calcolo: 32.5836 secondi, Iterazioni: 1109, Metodo: steepest_gradient, Elementi: 16 
+Tempo di calcolo: 54.7374 secondi, Iterazioni: 361, Metodo: newton_method, Elementi: 16 
+Tempo di calcolo: 299.8879 secondi, Iterazioni: 2539, Metodo: steepest_gradient, Elementi: 32 
+Tempo di calcolo: 205.0424 secondi, Iterazioni: 776, Metodo: newton_method, Elementi: 32 
+Tempo di calcolo: 818.1567 secondi, Iterazioni: 3442, Metodo: steepest_gradient, Elementi: 64 
+Tempo di calcolo: 677.7125 secondi, Iterazioni: 1506, Metodo: newton_method, Elementi: 64 
+Tempo di calcolo: 6795.3335 secondi, Iterazioni: 2319, Metodo: steepest_gradient, Elementi: 128 
+
+
+## confronto conj - adam -stee
+
+eta=1e5
+
+Tempo di calcolo: 0.1931 secondi, Iterazioni: 38, Metodo: conjugate_gradient, Elementi: 4 
+Tempo di calcolo: 0.7896 secondi, Iterazioni: 156, Metodo: adam_method, Elementi: 4 
+Tempo di calcolo: 0.9377 secondi, Iterazioni: 121, Metodo: conjugate_gradient, Elementi: 8 
+Tempo di calcolo: 2.3045 secondi, Iterazioni: 174, Metodo: adam_method, Elementi: 8 
+Tempo di calcolo: 13.2262 secondi, Iterazioni: 338, Metodo: conjugate_gradient, Elementi: 16 
+Tempo di calcolo: 27.0361 secondi, Iterazioni: 677, Metodo: adam_method, Elementi: 16 
+Tempo di calcolo: 92.3827 secondi, Iterazioni: 657, Metodo: conjugate_gradient, Elementi: 32 
+Tempo di calcolo: 161.6384 secondi, Iterazioni: 1224, Metodo: adam_method, Elementi: 32 
+Tempo di calcolo: 202.6933 secondi, Iterazioni: 770, Metodo: conjugate_gradient, Elementi: 64 
+Tempo di calcolo: 324.6085 secondi, Iterazioni: 1288, Metodo: adam_method, Elementi: 64 
+
+eta=1e4
+
+Tempo di calcolo: 0.7912 secondi, Iterazioni: 121, Metodo: conjugate_gradient, Elementi: 8 
+Tempo di calcolo: 1.1133 secondi, Iterazioni: 161, Metodo: adam_method, Elementi: 8 
+Tempo di calcolo: 11.4758 secondi, Iterazioni: 338, Metodo: conjugate_gradient, Elementi: 16 
+Tempo di calcolo: 21.3343 secondi, Iterazioni: 617, Metodo: adam_method, Elementi: 16 
+Tempo di calcolo: 91.3023 secondi, Iterazioni: 657, Metodo: conjugate_gradient, Elementi: 32 
+Tempo di calcolo: 155.2857 secondi, Iterazioni: 1128, Metodo: adam_method, Elementi: 32 
+Tempo di calcolo: 129.1330 secondi, Iterazioni: 689, Metodo: conjugate_gradient, Elementi: 48
+Tempo di calcolo: 237.6172 secondi, Iterazioni: 1238, Metodo: adam_method, Elementi: 48
+Tempo di calcolo: 204.2450 secondi, Iterazioni: 770, Metodo: conjugate_gradient, Elementi: 64 
+Tempo di calcolo: 322.9155 secondi, Iterazioni: 1188, Metodo: adam_method, Elementi: 64 
+Tempo di calcolo: 396.6031 secondi, Iterazioni: 840, Metodo: conjugate_gradient, Elementi: 96
+Tempo di calcolo: 484.1770 secondi, Iterazioni: 1035, Metodo: adam_method, Elementi: 96
+Tempo di calcolo: 3121.0279 secondi, Iterazioni: 849, Metodo: conjugate_gradient, Elementi: 128 
+Tempo di calcolo: 1980.3406 secondi, Iterazioni: 572, Metodo: adam_method, Elementi: 128 
+Tempo di calcolo: 3739.2137 secondi, Iterazioni: 872, Metodo: conjugate_gradient, Elementi: 144
+Tempo di calcolo: 1773.7830 secondi, Iterazioni: 413, Metodo: adam_method, Elementi: 144
+Tempo di calcolo: 6844.3253 secondi, Iterazioni: 963, Metodo: conjugate_gradient, Elementi: 192
+Tempo di calcolo: 1174.9007 secondi, Iterazioni: 166, Metodo: adam_method, Elementi: 192
+
+
+Tempo di calcolo: 1.0571 secondi, Iterazioni: 233, Metodo: steepest_gradient, Elementi: 4 
+Tempo di calcolo: 0.1738 secondi, Iterazioni: 38, Metodo: conjugate_gradient, Elementi: 4 
+Tempo di calcolo: 0.3378 secondi, Iterazioni: 75, Metodo: adam_method, Elementi: 4 
+Tempo di calcolo: 18.0962 secondi, Iterazioni: 1998, Metodo: steepest_gradient, Elementi: 8 
+Tempo di calcolo: 1.1886 secondi, Iterazioni: 121, Metodo: conjugate_gradient, Elementi: 8 
+Tempo di calcolo: 1.7177 secondi, Iterazioni: 161, Metodo: adam_method, Elementi: 8 
+Tempo di calcolo: 464.5992 secondi, Iterazioni: 15185, Metodo: steepest_gradient, Elementi: 16 
+Tempo di calcolo: 11.5180 secondi, Iterazioni: 338, Metodo: conjugate_gradient, Elementi: 16 
+Tempo di calcolo: 21.0567 secondi, Iterazioni: 617, Metodo: adam_method, Elementi: 16 
+
+
